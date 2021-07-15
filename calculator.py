@@ -7,7 +7,8 @@ def calculator(a,b):
     power=a**b
     square_root_1=math.sqrt(a)
     square_root_2 = math.sqrt(a)
-    return addition,subtraction,multiplication,division,power,square_root_2, square_root_1
+    perc=a*10/100
+    return addition,subtraction,multiplication,division,power,square_root_2, square_root_1,perc
     #result is stored into a tuple
 
 number_1=input("Insert first number \n")
@@ -21,3 +22,5 @@ print("The multiplication between two numbers is {}".format(result[2]))
 print("The division between two numbers is {}".format(result[3]))
 print("The power between two numbers is {}".format(result[4]))
 print("The square root of number 1 is {} and of number 2 is {}".format(result[5],result[6]))
+print("The 10% of the first number is {}".format(result[7]))
+
